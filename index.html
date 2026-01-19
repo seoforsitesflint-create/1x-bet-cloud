@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1xBet — beynəlxalq bahis platforması</title>
+    <meta name="description" content="1xBet — idmana, kazinoya və canlı formatlara mərc etməyə ixtisaslaşmış iri beynəlxalq platformadır. Geniş hadisə və oyun seçimi təklif edir.">
+    <link rel="canonical" href="https://1x-bet.cloud">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f1120;
+            color: #e2e8f0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: rgba(26, 31, 53, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: bold;
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: #e2e8f0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            color: #00d4ff;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #ff6b35, #ff8c42);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: clamp(3rem, 8vw, 6rem) 0;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(255, 107, 53, 0.1));
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 6vw, 3.5rem);
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            border-radius: 16px;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+            margin: 2rem auto;
+            display: block;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: clamp(2rem, 5vw, 4rem) 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .content-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-card {
+            background: #1a1f35;
+            border-radius: 16px;
+            padding: clamp(1.5rem, 4vw, 3rem);
+            margin-bottom: 2rem;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .section-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 48px rgba(0, 212, 255, 0.15);
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2.25rem);
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 3vw, 1.75rem);
+            color: #00d4ff;
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            line-height: 1.7;
+        }
+
+        .section-image {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 212, 255, 0.2);
+            margin: 24px auto;
+            display: block;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: #1a1f35;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: rgba(0, 212, 255, 0.1);
+        }
+
+        .faq-question h3 {
+            margin: 0;
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            color: #00d4ff;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(45deg);
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1f35;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid rgba(0, 212, 255, 0.2);
+            margin-top: 4rem;
+        }
+
+        .age-restriction {
+            color: #ff6b35;
+            font-weight: 600;
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: #e2e8f0;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .nav-menu {
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a1f35;
+                flex-direction: column;
+                padding: 1rem;
+                border-top: 1px solid rgba(0, 212, 255, 0.2);
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .header-content {
+                flex-wrap: wrap;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-card {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+
+        .highlight {
+            color: #00d4ff;
+            font-weight: 600;
+        }
+
+        strong {
+            color: #00d4ff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">1xBet</a>
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#platform">Platforma</a></li>
+                        <li><a href="#registration">Qeydiyyat</a></li>
+                        <li><a href="#security">Təhlükəsizlik</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
+                <a href="https://onexbetsloto.xyz/qFm3gq?source=1x-bet.cloud" class="cta-button">Qeydiyyat</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>1xBet — beynəlxalq bahis platforması</h1>
+                <img src="img/1x-bet-cloud-h2-3.jpg" alt="1xBet platforması" class="hero-image" width="800" height="400">
+                <p>1xBet — idmana, kazinoya və canlı formatlara mərc etməyə ixtisaslaşmış iri beynəlxalq platformadır. O, geniş hadisə və oyun seçimi təklif edir, bu da onu dünyada çoxlu istifadəçilər arasında populyar edir. Xidmətdən istifadəni başlamaq üçün 1xbet qeydiyyatından keçmək lazımdır, bundan sonra tam funksionallıq mövcuddur.</p>
+                <a href="https://onexbetsloto.xyz/qFm3gq?source=1x-bet.cloud" class="cta-button">İndi Başla</a>
+            </div>
+        </section>
+
+        <section class="content-section" id="platform">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet nədir və platforma necə işləyir</h2>
+                    <img src="img/1x-bet-cloud-h2-3.jpg" alt="1xBet nədir və platforma necə işləyir" loading="lazy" class="section-image" width="1440" height="449">
+                    <p>1xBet — vahid hesab ilə işləyən onlayn mərclər və kazino platformasıdır. İstifadəçi 1xbet qeydiyyatını tamamlayaraq hesab yaradır və sonra saytdakı bütün funksiyalara təkrar giriş etmədən daxil ola bilir. Giriş üçün 1xbet girişdən istifadə olunur, bu da şəxsi kabinetə sürətli çıxış təmin edir.</p>
+                    <p>1xbet rəsmi saytının əsas bölmələrinə idman mərcləri, kazino, oyunlar və yayınlar daxildir. Məlumat həm brauzer vasitəsilə, həm də mobil tətbiqlərdə əlçatandır. Giriş problemləri zamanı bloklamaları keçmək üçün 1xbet güzgü — alternativ ünvan kömək edir.</p>
+                    <p>Platforma ilə qarşılıqlı əlaqə məntiqlidir: istifadəçi bölməni seçir, hadisələr və ya oyunları öyrənir, mərc edir və nəticələri canlı rejimdə izləyir. Avtomatlaşdırılmış interfeys idman seçməkdən mərclərə və ödəmələrə keçidi sadələşdirir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet rəsmi saytı: əsas imkanlar</h2>
+                    <p>1xbet saytı rahat naviqasiyanı təklif edir, bu da lazım olan bölmələri və xidmətləri sürətlə tapmağa kömək edir. Əsas səhifədə əsas mərc kateqoriyaları, canlı tədbirlər və aksiyalar bölmələri yerləşir. Qeydiyyat üçün 1xbet qeydiyyat prosedurunu keçmək lazımdır, bu da az vaxt tələb edir və standart məlumatları tələb edir.</p>
+                    <p>1xbet girişindən sonra istifadəçi şəxsi kabinetə daxil olur, burada hesablar, depozitlər və vəsaitin çıxarılması idarə oluna bilər. Kabinet mövcud mərcin tam icmalı və əməliyyatların tarixçəsini təqdim edir. Problemlər yaranarsa, əsas sayt bloklandıqda işləyən 1xbet güzgüsü — alternativ giriş ünvanı mövcuddur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet şəxsi kabinetə giriş</h2>
+                    <p>1xbet rəsmi saytındakı şəxsi kabinet hesabınızı idarə etmək və mərc etməyi əlavə çətinliksiz etmək üçün lazımdır. 1xbet-ə girişdən sonra istifadəçi mərc tarixinə baxmaq, balansı artırmaq, vəsaitləri çıxarmaq və profil parametrlərini tənzimləmək imkanını əldə edir.</p>
+                    <p>Həmçinin kabinetdə bonus təklifləri funksiyalarından istifadə etmək, limitləri nəzarətdə saxlamaq və nəticələri izləmək mümkündür. Giriş zamanı bir neçə vəziyyət olur: unudulmuş parol, hesabın bloklanması və ya əsas sayt müvəqqəti əlçatan olmadıqda 1xbet güzgüsündən istifadə etmək zərurəti.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="registration">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet-də qeydiyyat: ümumi məlumat</h2>
+                    <img src="img/1x-bet-cloud-h2-6.jpg" alt="1xBet-də qeydiyyat: ümumi məlumat" loading="lazy" class="section-image" width="1440" height="449">
+                    <p>1xbet-də qeydiyyat — 1xBet xidmətlərindən istifadə etməyi planlaşdıranlar üçün ilk addımdır. Proses kifayət qədər sadədir və bir neçə mərhələdən ibarətdir. Əvvəlcə 1xbet rəsmi saytına daxil olmaq lazımdır və ya əsas resurs əlçatan deyilsə, 1xbet güzgüsündən istifadə etmək olar.</p>
+                    <p>Sonra istifadəçi qeydiyyat üçün rahat üsulu seçir — telefon nömrəsi, elektron poçt, sosial şəbəkələr və ya messencerlər vasitəsilə. Bundan sonra şəxsi məlumatlar daxil edilir və hesab təsdiqlənir. Gələcəkdə vəsaitlərin çıxarılması və hesabda daxil olma ilə bağlı problemlərin yaranmaması üçün bütün məlumatları diqqətlə doldurmaq vacibdir.</p>
+                    <a href="https://onexbetsloto.xyz/qFm3gq?source=1x-bet.cloud" class="cta-button">Qeydiyyatdan keç</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet platformasının əsas bölmələri</h2>
+                    <p>1xBet platforması istifadəçilərin rahatlığı üçün bir neçə əsas bölmə təklif edir. Birinci — idman hadisələri, burada müxtəlif disiplinlər və turnirlər təqdim olunur. Burada maraqlı olan matçı asanlıqla tapmaq mümkündür, bu xüsusilə 1xbet-in rəsmi saytına və ya onun güzgüsünə giriş axtaranlar üçün aktualdır.</p>
+                    <p>Növbəti blok — canlı formatlar. Onlar hadisələri real vaxtda izləməyə imkan verir. Onların sayəsində istifadəçilər cari nəticələri görə və sürətli qərarlar qəbul edə bilərlər, bu isə 1xbet qeydiyyatı və sonrakı əməliyyatlar zamanı tələb olunur.</p>
+                    <p>Oyun məhsulları geniş çeşiddə təqdim olunur: slotlar, stolüstü oyunlar və digər əyləncələr. Belə bir spektr müxtəlifliyi sevənləri və yalnız idman üçün deyil, 1xBet istifadə etmək istəyənləri cəlb edir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet-in müxtəlif cihazlarda istifadəsi</h2>
+                    <p>1xbet həm PC-dən, həm də mobil cihazlardan xidmətdən rahat istifadə imkanı təklif edir. Saytın interfeysi müxtəlif ekranlara uyğunlaşdırılıb, bu sayədə təcrübə platformadan asılı olmayaraq eyni qalır. İstifadəçilər istənilən brauzerdən kompüter vasitəsilə 1xbet giriş edə və ya <strong>1xbet rəsmi sayt</strong>-ını smartfondan istifadə edə bilərlər.</p>
+                    <p>Bloklamaları keçmək üçün <strong>1xbet güzgüsü</strong> mövcuddur, bu da fasiləsiz və sürətli giriş təmin edir. <strong>1xbet qeydiyyatı</strong> hər hansı bir cihazda eyni dərəcədə sadədir, bu da platformada tez işləməyə başlamağa imkan verir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet güzgüsü: istifadəçilər alternativ girişə niyə ehtiyac duyurlar</h2>
+                    <img src="img/1x-bet-cloud-h2-9.jpg" alt="1xBet güzgüsü: istifadəçilər alternativ girişə niyə ehtiyac duyurlar" loading="lazy" class="section-image" width="1440" height="449">
+                    <p>İstifadəçilər müntəzəm olaraq «1xbet giriş», «1xbet rəsmi sayt» və «1xbet qeydiyyat» sorğularını daxil edir, 1xbet platformasına daxil olmağa çalışaraq. Çox vaxt lazım olan resursu tapmağa <strong>1xbet güzgüsü</strong> kömək edir — bu, bukmeker kontorunun funksionallığına çıxışı təmin edən alternativ ünvan.</p>
+                    <p>Güzgülər rahatlıq üçün yaradılır: onlar əsas 1xbet saytını təkrarlayır, bütün funksiyalar və mərc imkanlarını qoruyur. İstifadəçi rəsmi resursa daxil olmaqda çətinliklə üzləşəndə, şəxs kabinetə tez və əlavə addımlar olmadan daxil olmaq və ya 1xbet qeydiyyatından keçmək üçün güzgü ünvanını daxil edir.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="security">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet-də Təhlükəsizlik və Hesabla İş</h2>
+                    <p>1xbet ilə işləyərkən hesabın təhlükəsizliyinə diqqətlə yanaşmaq vacibdir. 1xbet qeydiyyatı zamanı doğru məlumatlar şəxsi məlumatların etibarlı qorunmasının ilk addımıdır. Fırıldaq riskindən qaçmaq üçün yalnız 1xbet rəsmi saytı və ya təsdiqlənmiş 1xbet güzgüsündən istifadə edin.</p>
+                    <p>Sisteme girişi yalnız etibarlı cihazlar və qorunan şəbəkələr vasitəsilə həyata keçirin. Hətta kömək vəd etsələr belə, 1xbet giriş məlumatlarını üçüncü şəxslərə vermək olmaz. İstifadəçinin diqqətliliyi şifrələrin sızmasının və hesabın bloklanmasının qarşısını alacaq.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet platforması kimlər üçündür</h2>
+                    <p>1xBet platforması onlayn mərclər dünyasında fərqli təcrübə səviyyəsinə malik geniş istifadəçi spektrini cəlb edir. Yeni başlayanlar tez bir zamanda 1xbet qeydiyyatından keçib əsas funksiyaları mənimsəyə bilərlər, təcrübəli oyunçular isə analiz və mərclər üçün geniş imkanlar tapacaq.</p>
+                    <p>Platformaya giriş üçün tez-tez <strong>1xbet giriş</strong> rəsmi sayt üzərindən və ya <strong>1xbet güzgü</strong> vasitəsilə istifadə olunur, bu da bloklanmalara məhəl qoymadan stabilliyi təmin edir. <strong>1xbet rəsmi saytında</strong> populyar idman növlərinə mərc təklif olunur, həmçinin daha az tanınmış hadisələr də təqdim olunur.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" id="faq">
+            <div class="container">
+                <div class="section-card">
+                    <h2>1xBet haqqında tez-tez verilən suallar</h2>
+                    <img src="img/1x-bet-cloud-h2-12.jpg" alt="1xBet haqqında tez-tez verilən suallar" loading="lazy" class="section-image" width="1440" height="449">
+                    <p>İstifadəçilər 1xbet ilə işləyərkən tez-tez müxtəlif nüanslarla qarşılaşırlar. Burada 1xbet qeydiyyatı, rəsmi sayta giriş və işlək 1xbet güzgüsünün tapılması prosesini anlamağa kömək edəcək əsas suallar toplanıb.</p>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>1x-bet.cloud-da 1xbet qeydiyyatı necə həyata keçirilir?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1x-bet.cloud-da qeydiyyat prosesi sadədir: lazım olan məlumatları daxil etmək, hesabı təsdiqləmək və uyğun yoxlama üsulunu seçmək lazımdır. Bu, 1xbet saytının tam funksionallığına giriş imkanı verən standart prosedurdur.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>1xbet rəsmi saytını haradan tapmaq və onun əsl olduğunu necə yoxlamaq olar?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1xbet rəsmi saytını 1x-bet.cloud domeni və səhvsiz düzgün işləməsi ilə tanımaq olar. Şübhə yarandıqda, etibarlı mənbələrə müraciət etmək məsləhət görülür, çünki saxtalar çox vaxt oxşar ünvanlar və ya istifadəçi təhlükəsizliyini poza biləcək qanunsuz güzgülərdən istifadə edir.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>Əgər 1xbet sayta giriş mümkün deyilsə nə etmək lazımdır?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Əgər 1xbet rəsmi saytına giriş çətinləşibsə, işlək 1xbet güzgüsündən istifadə etmək tövsiyə olunur. Bu, bloklanmaların öhdəsindən gəlməyə və platformanın tam funksionallığını məhdudiyyətsiz saxlamağa kömək edən alternativ ünvandır.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>1xBet brendi nə deməkdir?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1xBet — müxtəlif adlar altında fəaliyyət göstərən beynəlxalq platformadır, o cümlədən 1xbet və 1хбет, regiona və dilə görə dəyişir. Bu ad dil variantlarının zənginliyi və istifadəçilər üçün əlçatan olan rahat 1xbet giriş sayəsində yaxşı tanınır.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>1xBet-dən istifadə etmək üçün qeydiyyatdan keçmək lazımdır?</h3>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1xbet rəsmi saytında tam işləmək üçün qeydiyyat vacibdir. Hesab yaradaraq, istifadəçi şəxsi kabinetə daxil olur, burada mərc və maliyyə idarə etmək mümkündür. 1xbet qeydiyyatı olmadan bəzi funksiyalar məhdudlaşdırılıb.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="age-restriction">18+</div>
+            <p>Məsuliyyətlə oynayın. Oyun asılılığı təhlükəlidir.</p>
+            <p>&copy; 2024 1xBet. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1x-bet.cloud-da 1xbet qeydiyyatı necə həyata keçirilir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1x-bet.cloud-da qeydiyyat prosesi sadədir: lazım olan məlumatları daxil etmək, hesabı təsdiqləmək və uyğun yoxlama üsulunu seçmək lazımdır. Bu, 1xbet saytının tam funksionallığına giriş imkanı verən standart prosedurdur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "1xbet rəsmi saytını haradan tapmaq və onun əsl olduğunu necə yoxlamaq olar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1xbet rəsmi saytını 1x-bet.cloud domeni və səhvsiz düzgün işləməsi ilə tanımaq olar. Şübhə yarandıqda, etibarlı mənbələrə müraciət etmək məsləhət görülür, çünki saxtalar çox vaxt oxşar ünvanlar və ya istifadəçi təhlükəsizliyini poza biləcək qanunsuz güzgülərdən istifadə edir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Əgər 1xbet sayta giriş mümkün deyilsə nə etmək lazımdır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Əgər 1xbet rəsmi saytına giriş çətinləşibsə, işlək 1xbet güzgüsündən istifadə etmək tövsiyə olunur. Bu, bloklanmaların öhdəsindən gəlməyə və platformanın tam funksionallığını məhdudiyyətsiz saxlamağa kömək edən alternativ ünvandır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "1xBet brendi nə deməkdir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1xBet — müxtəlif adlar altında fəaliyyət göstərən beynəlxalq platformadır, o cümlədən 1xbet və 1хбет, regiona və dilə görə dəyişir. Bu ad dil variantlarının zənginliyi və istifadəçilər üçün əlçatan olan rahat 1xbet giriş sayəsində yaxşı tanınır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "1xBet-dən istifadə etmək üçün qeydiyyatdan keçmək lazımdır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1xbet rəsmi saytında tam işləmək üçün qeydiyyat vacibdir. Hesab yaradaraq, istifadəçi şəxsi kabinetə daxil olur, burada mərc və maliyyə idarə etmək mümkündür. 1xbet qeydiyyatı olmadan bəzi funksiyalar məhdudlaşdırılıb."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script>
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // FAQ accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                
+                // Close all FAQ items
+                faqItems.forEach(faqItem => {
+                    faqItem.classList.remove('active');
+                    faqItem.querySelector('.faq-answer').classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                    answer.classList.add('active');
+                }
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all section cards
+        document.querySelectorAll('.section-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+        // Add click tracking for CTA buttons
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                // Track button click
+                console.log('CTA button clicked:', this.textContent);
+            });
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('header') && navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[loading="lazy"]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+
+<script>
+(function () {
+  function decodeBase64(str) {
+    try {
+      return decodeURIComponent(
+        atob(str)
+          .split('')
+          .map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+          .join('')
+      );
+    } catch (e) {
+      return null;
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    const el = e.target.closest('[data-ref]');
+    if (!el) return;
+    e.preventDefault();
+    const encoded = el.getAttribute('data-ref');
+    if (!encoded) return;
+    const url = decodeBase64(encoded);
+    if (!url) return;
+    window.location.href = url;
+  });
+})();
+</script>
+
+</body>
+</html>
