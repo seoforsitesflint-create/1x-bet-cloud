@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="az" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  
+  <title>1xBet — beynəlxalq bahis platforması | 1x-bet.cloud</title>
+  <meta name="description" content="1xBet beynəlxalq bahis platforması - idman mərcləri, kazino oyunları və canlı formatlar. Qeydiyyat və giriş üçün rəsmi sayt və güzgü ünvanları.">
+  
+  <link rel="canonical" href="https://1x-bet.cloud">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="1xBet — beynəlxalq bahis platforması">
+  <meta property="og:description" content="1xBet beynəlxalq bahis platforması - idman mərcləri, kazino oyunları və canlı formatlar. Qeydiyyat və giriş üçün rəsmi sayt və güzgü ünvanları.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://1x-bet.cloud">
+  <meta property="og:site_name" content="1x-bet.cloud">
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="1xBet — beynəlxalq bahis platforması">
+  <meta name="twitter:description" content="1xBet beynəlxalq bahis platforması - idman mərcləri, kazino oyunları və canlı formatlar. Qeydiyyat və giriş üçün rəsmi sayt və güzgü ünvanları.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #0e0a14;
+      --card: #1a1525;
+      --card-hover: #252035;
+      --accent: #a855f7;
+      --cta: #ec4899;
+      --cta-hover: #f472b6;
+      --text: #e8e0f0;
+      --text-muted: #9988aa;
+      --heading: #ffffff;
+      --border: rgba(168, 85, 247, 0.15);
+      --accent-rgb: 168, 85, 247;
+      --cta-rgb: 236, 72, 153;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      min-width: 320px;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 50px 50px;
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      padding: 8px 16px;
+      background: var(--accent);
+      color: var(--bg);
+      z-index: 10000;
+      transition: top 0.3s;
+      text-decoration: none;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+
+    *:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      background: rgba(14, 10, 20, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      transition: all 0.3s ease;
+    }
+
+    .header.scrolled {
+      background: rgba(14, 10, 20, 0.98);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 20px;
+      gap: 20px;
+    }
+
+    .logo {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .nav {
+      display: flex;
+      gap: 24px;
+    }
+
+    .nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav a:hover {
+      color: var(--accent);
+    }
+
+    .age-badge {
+      background: var(--cta);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 20%;
+      left: 10%;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: var(--accent);
+      filter: blur(120px);
+      opacity: 0.15;
+      z-index: -1;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 20%;
+      right: 15%;
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      background: var(--cta);
+      filter: blur(100px);
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 24px;
+      line-height: 1.2;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-image {
+      margin-top: 48px;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* CTA Buttons */
+    .cta-button {
+      display: inline-block;
+      background: transparent;
+      border: 2px solid var(--accent);
+      color: var(--accent);
+      box-shadow: 0 0 20px rgba(var(--accent-rgb), 0.3);
+      border-radius: 8px;
+      padding: 14px 28px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .cta-button:hover {
+      background: var(--accent);
+      color: var(--bg);
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(var(--accent-rgb), 0.5);
+    }
+
+    [data-ref] {
+      cursor: pointer;
+    }
+
+    /* Sections */
+    .section {
+      padding: 64px 0;
+    }
+
+    .section-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px;
+      margin-bottom: 32px;
+      transition: all 0.3s ease;
+    }
+
+    .section-card:hover {
+      background: var(--card-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .section h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 700;
+      color: var(--heading);
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+
+    .section-image {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 24px 0;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .section p {
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .section strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* FAQ Section */
+    .faq-section {
+      padding: 80px 0;
+    }
+
+    .faq-section h2 {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .faq-item.active {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      color: var(--heading);
+      padding: 20px 24px;
+      text-align: left;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: color 0.3s ease;
+    }
+
+    .faq-question:hover {
+      color: var(--accent);
+    }
+
+    .faq-icon {
+      font-size: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+    }
+
+    .faq-answer p {
+      padding: 0 24px 24px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    /* Disclaimer Section */
+    .disclaimer-section {
+      background: var(--card);
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+    }
+
+    .disclaimer-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .meta-info {
+      display: flex;
+      gap: 24px;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--bg);
+      border-top: 1px solid var(--border);
+      padding: 48px 0 24px;
+    }
+
+    .footer-main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+
+    .footer-brand .logo {
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+
+    .footer-desc {
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    .footer-nav, .footer-legal, .footer-info {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .footer-nav a, .footer-legal button, .footer-info button {
+      color: var(--text);
+      text-decoration: none;
+      background: none;
+      border: none;
+      text-align: left;
+      cursor: pointer;
+      transition: color 0.3s ease;
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    .footer-nav a:hover, .footer-legal button:hover, .footer-info button:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 24px;
+      text-align: center;
+    }
+
+    .responsible-text {
+      color: var(--cta);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .copyright {
+      color: var(--text-muted);
+      font-size: 0.875rem;
+    }
+
+    /* Modal Styles */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1000;
+    }
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.9);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      max-width: 800px;
+      width: 90%;
+      max-height: 85vh;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 1001;
+    }
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    .modal-header h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      color: var(--heading);
+    }
+    .modal-close {
+      background: none;
+      border: none;
+      color: var(--text);
+      font-size: 1.75rem;
+      cursor: pointer;
+      padding: 4px 12px;
+      border-radius: 8px;
+      transition: background 0.2s;
+      line-height: 1;
+    }
+    .modal-close:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .modal-body {
+      padding: 24px;
+      overflow-y: auto;
+      max-height: calc(85vh - 80px);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .modal-body h3 {
+      color: var(--heading);
+      margin: 24px 0 12px;
+    }
+    .modal-body h3:first-child {
+      margin-top: 0;
+    }
+    .modal-body p {
+      margin: 12px 0;
+    }
+    .modal-body ul, .modal-body ol {
+      padding-left: 24px;
+      margin: 12px 0;
+    }
+    .modal-body li {
+      margin: 8px 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .hero {
+        padding: 60px 0;
+      }
+
+      .section-card {
+        padding: 32px 24px;
+      }
+
+      .footer-main {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .meta-info {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      .section-card {
+        padding: 24px 20px;
+      }
+
+      .faq-question {
+        padding: 16px 20px;
+        font-size: 1rem;
+      }
+
+      .faq-answer p {
+        padding: 0 20px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Əsas məzmuna keç</a>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">1x-bet.cloud</a>
+      <nav class="nav">
+        <a href="#about">Haqqında</a>
+        <a href="#features">İmkanlar</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <span class="age-badge">18+</span>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>1xBet — beynəlxalq bahis platforması</h1>
+          <p class="hero-subtitle">1xBet — idmana, kazinoya və canlı formatlara mərc etməyə ixtisaslaşmış iri beynəlxalq platformadır. O, geniş hadisə və oyun seçimi təklif edir, bu da onu dünyada çoxlu istifadəçilər arasında populyar edir.</p>
+          <a data-ref="aHR0cHM6Ly9vbmV4YmV0c2xvdG8ueHl6L3FGbTNncT9zb3VyY2U9MXgtYmV0LmNsb3Vk" class="cta-button">Qeydiyyat</a>
+        </div>
+        <div class="hero-image">
+          <img src="img/1x-bet-cloud-h2-3.jpg" alt="1xBet beynəlxalq bahis platforması" width="1440" height="449">
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet nədir və platforma necə işləyir</h2>
+          <img src="img/1x-bet-cloud-h2-3.jpg" alt="1xBet nədir və platforma necə işləyir" loading="lazy" class="section-image" width="1440" height="449">
+          <p>1xBet — vahid hesab ilə işləyən onlayn mərclər və kazino platformasıdır. İstifadəçi 1xbet qeydiyyatını tamamlayaraq hesab yaradır və sonra saytdakı bütün funksiyalara təkrar giriş etmədən daxil ola bilir. Giriş üçün 1xbet girişdən istifadə olunur, bu da şəxsi kabinetə sürətli çıxış təmin edir.</p>
+          <p>1xbet rəsmi saytının əsas bölmələrinə idman mərcləri, kazino, oyunlar və yayınlar daxildir. Məlumat həm brauzer vasitəsilə, həm də mobil tətbiqlərdə əlçatandır. Giriş problemləri zamanı bloklamaları keçmək üçün 1xbet güzgü — alternativ ünvan kömək edir.</p>
+          <p>Platforma ilə qarşılıqlı əlaqə məntiqlidir: istifadəçi bölməni seçir, hadisələr və ya oyunları öyrənir, mərc edir və nəticələri canlı rejimdə izləyir. Avtomatlaşdırılmış interfeys idman seçməkdən mərclərə və ödəmələrə keçidi sadələşdirir. Bu, texniki detallara fikir vermədən fərdi qərarlara diqqət yetirməyə imkan verir.</p>
+          <a data-ref="aHR0cHM6Ly9vbmV4YmV0c2xvdG8ueHl6L3FGbTNncT9zb3VyY2U9MXgtYmV0LmNsb3Vk" class="cta-button">Platformaya daxil ol</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet rəsmi saytı: əsas imkanlar</h2>
+          <p>1xbet saytı rahat naviqasiyanı təklif edir, bu da lazım olan bölmələri və xidmətləri sürətlə tapmağa kömək edir. Əsas səhifədə əsas mərc kateqoriyaları, canlı tədbirlər və aksiyalar bölmələri yerləşir. Qeydiyyat üçün 1xbet qeydiyyat prosedurunu keçmək lazımdır, bu da az vaxt tələb edir və standart məlumatları tələb edir.</p>
+          <p>1xbet girişindən sonra istifadəçi şəxsi kabinetə daxil olur, burada hesablar, depozitlər və vəsaitin çıxarılması idarə oluna bilər. Kabinet mövcud mərcin tam icmalı və əməliyyatların tarixçəsini təqdim edir. Problemlər yaranarsa, əsas sayt bloklandıqda işləyən 1xbet güzgüsü — alternativ giriş ünvanı mövcuddur.</p>
+          <p>Rəsmi saytın əsas xidmətlərinə idman mərcələri, kiberidman və kazino daxildir. Hər bölmə rahat axtarış və ətraflı statistikaya malik filtrlərlə təchiz olunub. Bundan əlavə, sayt müxtəlif dilləri dəstəkləyir, bu da onu geniş auditoriya üçün əlçatan edir. <strong>1xbet rəsmi saytı</strong> stabil iş və rahat istifadə üçün məlumatların vaxtında yenilənməsini təmin edir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet şəxsi kabinetə giriş</h2>
+          <p>1xbet rəsmi saytındakı şəxsi kabinet hesabınızı idarə etmək və mərc etməyi əlavə çətinliksiz etmək üçün lazımdır. 1xbet-ə girişdən sonra istifadəçi mərc tarixinə baxmaq, balansı artırmaq, vəsaitləri çıxarmaq və profil parametrlərini tənzimləmək imkanını əldə edir. Həmçinin kabinetdə bonus təklifləri funksiyalarından istifadə etmək, limitləri nəzarətdə saxlamaq və nəticələri izləmək mümkündür.</p>
+          <p>Giriş zamanı bir neçə vəziyyət olur: unudulmuş parol, hesabın bloklanması və ya əsas sayt müvəqqəti əlçatan olmadıqda 1xbet güzgüsündən istifadə etmək zərurəti. Yeni istifadəçilər üçün əvvəlcə 1xbet qeydiyyatı tələb olunur, bundan sonra şəxsi kabinetlə tam işləmək mümkündür.</p>
+          <p>Vacibdir ki, bəzən 1xBet-də şəxsiyyətin təsdiqlənməsi və ya əlavə təhlükəsizlik yoxlaması tələb olunur. Şəxsi kabinetə giriş — 1x-bet.cloud platformasının imkanlarından rahat və təhlükəsiz istifadə üçün ilk addımdır.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet-də qeydiyyat: ümumi məlumat</h2>
+          <img src="img/1x-bet-cloud-h2-6.jpg" alt="1xBet-də qeydiyyat: ümumi məlumat" loading="lazy" class="section-image" width="1440" height="449">
+          <p>1xbet-də qeydiyyat — 1xBet xidmətlərindən istifadə etməyi planlaşdıranlar üçün ilk addımdır. Proses kifayət qədər sadədir və bir neçə mərhələdən ibarətdir. Əvvəlcə 1xbet rəsmi saytına daxil olmaq lazımdır və ya əsas resurs əlçatan deyilsə, 1xbet güzgüsündən istifadə etmək olar. Sonra istifadəçi qeydiyyat üçün rahat üsulu seçir — telefon nömrəsi, elektron poçt, sosial şəbəkələr və ya messencerlər vasitəsilə.</p>
+          <p>Bundan sonra şəxsi məlumatlar daxil edilir və hesab təsdiqlənir. Gələcəkdə vəsaitlərin çıxarılması və hesabda daxil olma ilə bağlı problemlərin yaranmaması üçün bütün məlumatları diqqətlə doldurmaq vacibdir. 1xbet girişindən istifadə etməklə istifadəçi platformanın bütün funksiyalarına, o cümlədən mərclərə, oyunlara və bonuslara çıxış əldə edir.</p>
+          <p>Hesab mərclər tarixinin saxlanması və balansın idarə olunması üçün lazımdır. O, həm də şəxsi kabinet kimi xidmət edir, burada maliyyə əməliyyatlarını idarə etmək və parametrləri düzəltmək mümkündür. Əgər 1xbet rəsmi sayt əlçatan deyilsə, qeydiyyat və daxil olmaq üçün həmişə 1xbet güzgüsündən istifadə etmək olar.</p>
+          <p>Beləliklə, 1xbet qeydiyyatı — 1xBet-in bütün imkanlarına çıxış təmin edən standart prosedurdur, platforma ilə işin rahat və təhlükəsiz olmasını təmin edir.</p>
+          <a data-ref="aHR0cHM6Ly9vbmV4YmV0c2xvdG8ueHl6L3FGbTNncT9zb3VyY2U9MXgtYmV0LmNsb3Vk" class="cta-button">İndi qeydiyyatdan keç</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet platformasının əsas bölmələri</h2>
+          <p>1xBet platforması istifadəçilərin rahatlığı üçün bir neçə əsas bölmə təklif edir. Birinci — idman hadisələri, burada müxtəlif disiplinlər və turnirlər təqdim olunur. Burada maraqlı olan matçı asanlıqla tapmaq mümkündür, bu xüsusilə 1xbet-in rəsmi saytına və ya onun güzgüsünə giriş axtaranlar üçün aktualdır.</p>
+          <p>Növbəti blok — canlı formatlar. Onlar hadisələri real vaxtda izləməyə imkan verir. Onların sayəsində istifadəçilər cari nəticələri görə və sürətli qərarlar qəbul edə bilərlər, bu isə 1xbet qeydiyyatı və sonrakı əməliyyatlar zamanı tələb olunur.</p>
+          <p>Oyun məhsulları geniş çeşiddə təqdim olunur: slotlar, stolüstü oyunlar və digər əyləncələr. Belə bir spektr müxtəlifliyi sevənləri və yalnız idman üçün deyil, 1xBet istifadə etmək istəyənləri cəlb edir.</p>
+          <p>Əlavə xidmətlər platformanın funksionallığını genişləndirir. Onların arasında maliyyə alətləri, müştəri dəstəyi və mobil tətbiqlər var. Bu 1xbet qeydiyyatı və girişdən sonra platformada işləməyi asanlaşdırır, istifadəçilərə rahatlıq və təhlükəsizlik təmin edir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet-in müxtəlif cihazlarda istifadəsi</h2>
+          <p>1xbet həm PC-dən, həm də mobil cihazlardan xidmətdən rahat istifadə imkanı təklif edir. Saytın interfeysi müxtəlif ekranlara uyğunlaşdırılıb, bu sayədə təcrübə platformadan asılı olmayaraq eyni qalır. İstifadəçilər istənilən brauzerdən kompüter vasitəsilə 1xbet giriş edə və ya <strong>1xbet rəsmi sayt</strong>-ını smartfondan istifadə edə bilərlər, burada bahis və maliyyə əməliyyatlarının asan idarəsi üçün hər şey uyğunlaşdırılıb.</p>
+          <p>Bloklamaları keçmək üçün <strong>1xbet güzgüsü</strong> mövcuddur, bu da fasiləsiz və sürətli giriş təmin edir. <strong>1xbet qeydiyyatı</strong> hər hansı bir cihazda eyni dərəcədə sadədir, bu da platformada tez işləməyə başlamağa imkan verir. Mobil versiya və tətbiqlər istifadəçilərin desktopda gördüyü funksionallığı saxlayır, tanış naviqasiyanı və rahatlığı qoruyur.</p>
+          <p>Bu yanaşma təmin edir ki, siz PC və ya telefon istifadəsi fərq etmədən, 1xbet xidməti stabil, aydın və istənilən ekran ölçüsünə uyğun qalır. Bu hesabla hesabla işləməkdə fasiləsiz giriş və eyni səviyyədə rahatlıq təmin olunur.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet güzgüsü: istifadəçilər alternativ girişə niyə ehtiyac duyurlar</h2>
+          <img src="img/1x-bet-cloud-h2-9.jpg" alt="1xBet güzgüsü: istifadəçilər alternativ girişə niyə ehtiyac duyurlar" loading="lazy" class="section-image" width="1440" height="449">
+          <p>İstifadəçilər müntəzəm olaraq «1xbet giriş», «1xbet rəsmi sayt» və «1xbet qeydiyyat» sorğularını daxil edir, 1xbet platformasına daxil olmağa çalışaraq. Çox vaxt lazım olan resursu tapmağa <strong>1xbet güzgüsü</strong> kömək edir — bu, bukmeker kontorunun funksionallığına çıxışı təmin edən alternativ ünvan. Bu üsul keçid yolu kimi işləyir, tanış hesabı dəyişdirmədən oyuna və ya qeydiyyata sürətlə davam etmək imkanı verir.</p>
+          <p>Güzgülər rahatlıq üçün yaradılır: onlar əsas 1xbet saytını təkrarlayır, bütün funksiyalar və mərc imkanlarını qoruyur. İstifadəçi rəsmi resursa daxil olmaqda çətinliklə üzləşəndə, şəxs kabinetə tez və əlavə addımlar olmadan daxil olmaq və ya 1xbet qeydiyyatından keçmək üçün güzgü ünvanını daxil edir. Bu, xüsusilə məhdudiyyətlər olmadan sürətli mərc etmək lazım gəldikdə giriş prosesini asanlaşdırır.</p>
+          <p>Beləliklə, 1xbet güzgüsü ekosistemin ayrılmaz hissəsinə çevrilir, xidmətin sabitliyini və əlçatanlığını dəstəkləyir. Onlar tez-tez axtarış sorğularında peyda olur, çünki sevimli resursla əlaqəni itirməməyi və əsas saytın işində mümkün qırılmaların qarşısını almağa imkan verir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet-də Təhlükəsizlik və Hesabla İş</h2>
+          <p>1xbet ilə işləyərkən hesabın təhlükəsizliyinə diqqətlə yanaşmaq vacibdir. 1xbet qeydiyyatı zamanı doğru məlumatlar şəxsi məlumatların etibarlı qorunmasının ilk addımıdır. Fırıldaq riskindən qaçmaq üçün yalnız 1xbet rəsmi saytı və ya təsdiqlənmiş 1xbet güzgüsündən istifadə edin.</p>
+          <p>Sisteme girişi yalnız etibarlı cihazlar və qorunan şəbəkələr vasitəsilə həyata keçirin. Hətta kömək vəd etsələr belə, 1xbet giriş məlumatlarını üçüncü şəxslərə vermək olmaz. İstifadəçinin diqqətliliyi şifrələrin sızmasının və hesabın bloklanmasının qarşısını alacaq.</p>
+          <p>Bütün əməliyyatlar yalnız məlumatların yoxlanılmasından və 1x-bet.cloud saytında və ya digər 1xbet resurslarında təsdiqləmədən sonra həyata keçirilməlidir. Hesabınıza qayğı göstərmək rahat və təhlükəsiz oyun üçün zəmanətdir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-card">
+          <h2>1xBet platforması kimlər üçündür</h2>
+          <p>1xBet platforması onlayn mərclər dünyasında fərqli təcrübə səviyyəsinə malik geniş istifadəçi spektrini cəlb edir. Yeni başlayanlar tez bir zamanda 1xbet qeydiyyatından keçib əsas funksiyaları mənimsəyə bilərlər, təcrübəli oyunçular isə analiz və mərclər üçün geniş imkanlar tapacaq. Platformaya giriş üçün tez-tez <strong>1xbet giriş</strong> rəsmi sayt üzərindən və ya <strong>1xbet güzgü</strong> vasitəsilə istifadə olunur, bu da bloklanmalara məhəl qoymadan stabilliyi təmin edir.</p>
+          <p>1xbet idman hadisələrinin müxtəlifliyini və istifadəçi interfeysinin rahatlığını dəyər verənlərə uyğun gəlir. <strong>1xbet rəsmi saytında</strong> populyar idman növlərinə mərc təklif olunur, həmçinin daha az tanınmış hadisələr də təqdim olunur — bu isə fərqli bilik və üstünlüklərə malik oyunçular üçün seçim imkanını genişləndirir.</p>
+          <p>Buna görə də, 1xBet həm onlayn mərclərlə tanış olanlar, həm də funksional və etibarlı platforma axtaran təcrübəli istifadəçilər üçün uyğundur.</p>
+          <a data-ref="aHR0cHM6Ly9vbmV4YmV0c2xvdG8ueHl6L3FGbTNncT9zb3VyY2U9MXgtYmV0LmNsb3Vk" class="cta-button">Platformanı sına</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <h2>1xBet haqqında tez-tez verilən suallar</h2>
+        <img src="img/1x-bet-cloud-h2-12.jpg" alt="1xBet haqqında tez-tez verilən suallar" loading="lazy" class="section-image" width="1440" height="449">
+        <p style="text-align: center; margin-bottom: 48px; color: var(--text-muted);">İstifadəçilər 1xbet ilə işləyərkən tez-tez müxtəlif nüanslarla qarşılaşırlar. Burada 1xbet qeydiyyatı, rəsmi sayta giriş və işlək 1xbet güzgüsünün tapılması prosesini anlamağa kömək edəcək əsas suallar toplanıb.</p>
+        
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+              <span>1x-bet.cloud-da 1xbet qeydiyyatı necə həyata keçirilir?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" id="faq-1">
+              <p>1x-bet.cloud-da qeydiyyat prosesi sadədir: lazım olan məlumatları daxil etmək, hesabı təsdiqləmək və uyğun yoxlama üsulunu seçmək lazımdır. Bu, 1xbet saytının tam funksionallığına giriş imkanı verən standart prosedurdur.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+              <span>1xbet rəsmi saytını haradan tapmaq və onun əsl olduğunu necə yoxlamaq olar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" id="faq-2">
+              <p>1xbet rəsmi saytını 1x-bet.cloud domeni və səhvsiz düzgün işləməsi ilə tanımaq olar. Şübhə yarandıqda, etibarlı mənbələrə müraciət etmək məsləhət görülür, çünki saxtalar çox vaxt oxşar ünvanlar və ya istifadəçi təhlükəsizliyini poza biləcək qanunsuz güzgülərdən istifadə edir.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+              <span>Əgər 1xbet sayta giriş mümkün deyilsə nə etmək lazımdır?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" id="faq-3">
+              <p>Əgər 1xbet rəsmi saytına giriş çətinləşibsə, işlək 1xbet güzgüsündən istifadə etmək tövsiyə olunur. Bu, bloklanmaların öhdəsindən gəlməyə və platformanın tam funksionallığını məhdudiyyətsiz saxlamağa kömək edən alternativ ünvandır.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+              <span>1xbet güzgüsü nə qədər müddət işləyir və onu necə tapmaq olar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" id="faq-4">
+              <p>1xbet güzgüləri mütəmadi yenilənir, çünki bloklanmalar saytın əlçatanlığını dəyişdirir. Adətən işlək 1xbet güzgüsü onun texniki və inzibati səbəblərlə bloklanmasına qədər aktiv olur. Cari güzgülər haqqında məlumatı etibarlı mövzu üzrə resurslardan əldə etmək mümkündür.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-5">
+              <span>1xBet brendi nə deməkdir?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" id="faq-5">
+              <p>1xBet — müxtəlif adlar altında fəaliyyət göstərən beynəlxalq platformadır, o cümlədən 1xbet və 1хбет, regiona və dilə görə dəyişir. Bu ad dil variantlarının zənginliyi və istifadəçilər üçün əlçatan olan rahat 1xbet giriş sayəsində yaxşı tanınır.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-6">
+              <span>1xBet-dən istifadə etmək üçün qeydiyyatdan keçmək lazımdır?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" id="faq-6">
+              <p>1xbet rəsmi saytında tam işləmək üçün qeydiyyat vacibdir. Hesab yaradaraq, istifadəçi şəxsi kabinetə daxil olur, burada mərc və maliyyə idarə etmək mümkündür. 1xbet qeydiyyatı olmadan bəzi funksiyalar məhdudlaşdırılıb.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-7">
+              <span>1xBet rəsmi saytı digər resurslardan nə ilə fərqlənir?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" id="faq-7">
+              <p>1xbet rəsmi saytı platformanın funksiyalarına tam giriş imkanı verir, tək bir hesab vasitəsilə 1xbet girişini və mərc idarəsini asanlaşdırır. Burada istifadəçilər üçün vacib olan aktuallığı qoruyan rəsmi məlumatlar həmişə mövcuddur.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq-8">
+              <span>Niyə istifadəçilər 1xBet güzgüsünü axtarır?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer" id="faq-8">
+              <p>İstifadəçilər stabil 1xbet girişi əldə etmək və oyunu və ya mərcləri kəsməmək üçün mütəmadi olaraq 1xbet güzgüsünü axtarırlar. Bəzən müəyyən bölgələrdə 1xbet rəsmi saytına giriş məhdudlaşdırılır, ona görə də alternativ axtarışı vacib olur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="disclaimer-section">
+      <div class="container">
+        <p class="disclaimer-text">
+          ℹ️ Məlumat tanışlıq məqsədilə hazırlanıb. Redaksiya bu materiallardan istifadənin mümkün nəticələrinə görə məsuliyyət daşımır.
+        </p>
+        <div class="meta-info">
+          <span class="update-date">📅 Yenilənib: 2025-01-15</span>
+          <span class="author">✍️ Redaksiya 1x-bet.cloud</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <span class="logo">1x-bet.cloud</span>
+          <p class="footer-desc">Onlayn kazino və slot icmalları</p>
+        </div>
+        
+        <nav class="footer-nav">
+          <a href="#about">Haqqında</a>
+          <a href="#features">İmkanlar</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        
+        <div class="footer-legal">
+          <button data-modal="terms">Şərtlər və Qaydalar</button>
+          <button data-modal="privacy">Məxfilik Siyasəti</button>
+          <button data-modal="responsible">Məsul Oyun</button>
+          <button data-modal="cookies">Cookie Siyasəti</button>
+        </div>
+        
+        <div class="footer-info">
+          <button data-modal="access">Necə daxil olmaq</button>
+          <button data-modal="security">Təhlükəsizlik</button>
+          <button data-modal="mirrors">Güzgülər</button>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="responsible-text">
+          18+ | Azart oyunları asılılıq yarada bilər | Məsuliyyətlə oynayın
+        </p>
+        <p class="copyright">
+          © 2025 1x-bet.cloud. Bütün hüquqlar qorunur.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="modal-overlay"></div>
+
+  <!-- Terms Modal -->
+  <div class="modal" id="modal-terms" role="dialog" aria-modal="true" aria-labelledby="modal-terms-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-terms-title">Şərtlər və Qaydalar</h2>
+        <button class="modal-close" data-close-modal aria-label="Bağla">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Bu saytdan istifadə şərtlərlə razılıq deməkdir:</p>
+        <ul>
+          <li>Sayt tanışlıq məqsədilə məlumat təqdim edir</li>
+          <li>Biz kazino deyilik və mərc qəbul etmirik</li>
+          <li>İstifadəçi öz yurisdiksiyasının qanunlarına riayət etməyə məcburdur</li>
+          <li>Azart oyunları 18 yaşdan kiçik şəxslər üçün qadağandır</li>
+          <li>Bonus məlumatlarının aktuallığına zəmanət vermirik</li>
+        </ul>
+        <p>Redaksiya şərtləri bildiriş vermədən dəyişdirmək hüququnu özündə saxlayır.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Privacy Modal -->
+  <div class="modal" id="modal-privacy" role="dialog" aria-modal="true" aria-labelledby="modal-privacy-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-privacy-title">Məxfilik Siyasəti</h2>
+        <button class="modal-close" data-close-modal aria-label="Bağla">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Biz sizin məxfiliyinizə hörmət edirik.</p>
+        <h3>Toplanan məlumatlar:</h3>
+        <ul>
+          <li>Anonim ziyarət statistikası</li>
+          <li>Saytın işini yaxşılaşdırmaq üçün cookies</li>
+        </ul>
+        <h3>Toplamadığımız məlumatlar:</h3>
+        <ul>
+          <li>Şəxsi məlumatlar</li>
+          <li>Ödəniş məlumatları</li>
+          <li>Qeydiyyat məlumatları</li>
+        </ul>
+        <p>Məlumatlar üçüncü şəxslərə verilmir. Cookies-ləri silmək üçün brauzer məlumatlarını təmizləyin.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Responsible Gambling Modal -->
+  <div class="modal" id="modal-responsible" role="dialog" aria-modal="true" aria-labelledby="modal-responsible-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-responsible-title">Məsul Oyun</h2>
+        <button class="modal-close" data-close-modal aria-label="Bağla">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Azart oyunları əyləncə olmalıdır, qazanc yolu deyil.</p>
+        <h3>Tövsiyələr:</h3>
+        <ul>
+          <li>Depozit və oyun vaxtı üçün limitlər qoyun</li>
+          <li>Heç vaxt son pulunuzla oynamayın</li>
+          <li>Uduzduqdan sonra geri qaytarmağa çalışmayın</li>
+          <li>Fasilələr verin</li>
+        </ul>
+        <h3>Problemli oyunun əlamətləri:</h3>
+        <ul>
+          <li>Oyuna sərf edilən vaxt və pul haqqında yalan</li>
+          <li>Problemlərdən qaçmaq üçün oyun</li>
+          <li>Oyun üçün borc alma</li>
+        </ul>
+        <p>Əgər siz və ya yaxınlarınız oyun asılılığı ilə üzləşibsə, mütəxəssislərdən kömək alın.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookies Modal -->
+  <div class="modal" id="modal-cookies" role="dialog" aria-modal="true" aria-labelledby="modal-cookies-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-cookies-title">Cookie Siyasəti</h2>
+        <button class="modal-close" data-close-modal aria-label="Bağla">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p>Sayt cookies istifadə edir:</p>
+        <ul>
+          <li>Sayt funksiyalarının düzgün işi üçün</li>
+          <li>Ziyarətçilik təhlili üçün</li>
+          <li>İstifadəçi təcrübəsini yaxşılaşdırmaq üçün</li>
+        </ul>
+        <h3>Cookie növləri:</h3>
+        <ul>
+          <li>Zəruri: saytın işini təmin edir</li>
+          <li>Analitik: ziyarətçi davranışını anlamağa kömək edir</li>
+        </ul>
+        <p>Brauzer ayarlarında cookies-ləri söndürə bilərsiniz, lakin bu saytın işinə təsir edə bilər.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Access Modal -->
+  <div class="modal" id="modal-access" role="dialog" aria-modal="true" aria-labelledby="modal-access-title">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-access-title">Platformaya necə daxil olmaq</h2>
+        <button class="modal-close" data-close-modal aria-label="Bağla">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h3>Giriş addımları:</h3>
+        <ol>
+          <li>Rəsmi sayt linkinə keçin</li>
+          <li>Hesab qeydiyyatından keçin və ya daxil olun</li>
+          <li>Email/telefonu təsdiqləyin</li>
+          <li>Rahat üsulla hesabı doldurun</li>
+          <li>Oyunu seçin və oynamağa başlayın</li>
+        </ol>
+        <h3>Giriş problemləri zamanı:</h3>
+        <ul>
+          <li>İnternet bağlantısını yoxlayın</li>
+          <li>Brauzer keşini təmizləməyə çalışın</li>
+          <li>Alternativ link (güzgü) istifadə edin</li>
+          <li>Dəstək xidmətinə müraciət edin</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Security Modal -->
+
+<!-- Consent Popup -->
+<div class="consent-popup" id="consent-popup">
+  <div class="consent-content">
+    <p class="consent-text">🍪 We use cookies to improve your experience. By continuing to use this site, you agree to data processing. <button data-modal="privacy" class="consent-link">Privacy Policy</button></p>
+    <button class="consent-accept" id="consent-accept">Accept</button>
+  </div>
+</div>
+<style>
+.consent-popup{position:fixed;bottom:0;left:0;right:0;background:#1a1525;border-top:1px solid rgba(168,85,247,0.15);padding:16px 20px;z-index:999;transform:translateY(100%);transition:transform 0.3s ease}
+.consent-popup.active{transform:translateY(0)}
+.consent-content{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.consent-text{flex:1;margin:0;font-size:0.9rem;color:#9988aa;min-width:280px}
+.consent-link{background:none;border:none;color:#a855f7;text-decoration:underline;cursor:pointer;padding:0;font-size:inherit}
+.consent-accept{background:#a855f7;color:#0e0a14;border:none;padding:12px 32px;border-radius:8px;font-weight:600;cursor:pointer;white-space:nowrap;transition:all 0.2s ease}
+.consent-accept:hover{filter:brightness(1.1);transform:scale(1.02)}
+@media(max-width:640px){.consent-content{flex-direction:column;text-align:center}.consent-accept{width:100%}}
+</style>
+
+
+<script>
+(function(){
+  // Consent Popup
+  var popup=document.getElementById('consent-popup');
+  var acceptBtn=document.getElementById('consent-accept');
+  if(popup&&!localStorage.getItem('consent-accepted')){
+    setTimeout(function(){popup.classList.add('active')},1000);
+  }
+  if(acceptBtn){
+    acceptBtn.addEventListener('click',function(){
+      localStorage.setItem('consent-accepted','true');
+      popup.classList.remove('active');
+    });
+  }
+  
+  // FAQ Accordion
+  document.querySelectorAll('.faq-question').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=btn.parentElement;
+      var isOpen=item.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(function(i){
+        i.classList.remove('active');
+        i.querySelector('.faq-question').setAttribute('aria-expanded','false');
+      });
+      if(!isOpen){
+        item.classList.add('active');
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+  
+  // Modals
+  document.addEventListener('click',function(e){
+    var openBtn=e.target.closest('[data-modal]');
+    if(openBtn){
+      var modalId='modal-'+openBtn.getAttribute('data-modal');
+      var modal=document.getElementById(modalId);
+      var overlay=document.getElementById('modal-overlay');
+      if(modal&&overlay){
+        modal.classList.add('active');
+        overlay.classList.add('active');
+        document.body.style.overflow='hidden';
+      }
+    }
+    if(e.target.closest('[data-close-modal]')||e.target.id==='modal-overlay'){
+      document.querySelectorAll('.modal,.modal-overlay').forEach(function(el){
+        el.classList.remove('active');
+      });
+      document.body.style.overflow='';
+    }
+  });
+  
+  document.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){
+      document.querySelectorAll('.modal,.modal-overlay').forEach(function(el){
+        el.classList.remove('active');
+      });
+      document.body.style.overflow='';
+    }
+  });
+  
+  // Smooth Scroll
+  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
+    anchor.addEventListener('click',function(e){
+      var href=this.getAttribute('href');
+      if(href==='#')return;
+      var target=document.querySelector(href);
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth',block:'start'});
+      }
+    });
+  });
+  
+  // Header Scroll
+  var header=document.querySelector('.header');
+  window.addEventListener('scroll',function(){
+    if(window.pageYOffset>100){
+      header.classList.add('scrolled');
+    }else{
+      header.classList.remove('scrolled');
+    }
+  });
+  
+  // Ref Links (base64)
+  function decodeBase64(str){
+    try{
+      return decodeURIComponent(atob(str).split('').map(function(c){
+        return '%'+('00'+c.charCodeAt(0).toString(16)).slice(-2);
+      }).join(''));
+    }catch(e){return null;}
+  }
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('[data-ref]');
+    if(!el)return;
+    e.preventDefault();
+    var encoded=el.getAttribute('data-ref');
+    if(!encoded)return;
+    var url=decodeBase64(encoded);
+    if(!url)return;
+    window.location.href=url;
+  });
+})();
+</script>
+
+</body>
+</html>
